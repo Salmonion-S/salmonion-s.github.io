@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sai Root</title>
+    <link rel="icon" href="svg/logo.svg" type="image/icon type">
+    <link rel="stylesheet" href="styleee.css" />
+    <script>
+      window.onscroll = function() { Scroll()};
+      function Scroll() {
+        if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+          document.getElementById("id-navi").className = "navi-slidedown";
+        }
+        if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+          document.getElementById("id-about-scroll").className = "scroll-about";
+        }
+      }
+
+      function menuButtonSnacks(){
+        document.getElementById("id-drinks").className = "menu-button-off";
+        document.getElementById("id-snacks").className = "menu-button-on";
+        document.getElementById("id-menu-snacks").className = "menu-snacks-on";
+        document.getElementById("id-menu-drinks").className = "menu-drinks-off";
+      }
+      function menuButtonDrinks(){
+        document.getElementById("id-drinks").className = "menu-button-on";
+        document.getElementById("id-snacks").className = "menu-button-off";
+        document.getElementById("id-menu-snacks").className = "menu-snacks-off";
+        document.getElementById("id-menu-drinks").className = "menu-drinks-on";
+      }
+
+
+
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <section class="main">
+        <div class="fix" >
+          <a class="a1" href="#id-contact">CONTACT US</a>
+
+          <a class="a1" href="#id-about">ABOUT US</a>
+          <a class="a1" href="#">HOME</a>
+        </div>
+      </section>
+      <div class="fix-background" id="id-navi"></div>
+      <div class="banner">
+        <h1 class="banner-title">Sai Root</h1>
+        <h3 class="banner-subtitle">Sehat Alami, Hidup Lebih Berarti.</h3>
+      </div>
+      <div class="banner-bottom"><a href="#id-skills"><img src="svg/down-arrow.svg"></a></div>
+    </header>
+    <div class="content-divider"></div>
+
+    <section class="skills" id="id-skills" style="background-color:#ffff">
+      <!-- single skill -->
+      <article class="skill1">
+        <center><img src="svg/coffee-bag.svg" height="45px"></center><br>
+        <h3 class="skill-title">dari alam</h3>
+        <p class="skill-text">
+          Produk kami terbuat dari bahan alami pilihan yang menjaga kesehatan tubuh secara alami.
+        </p>
+      </article>
+      <!--end single skill -->
+      <!-- single skill -->
+      <article class="skill2">
+        <center><img src="svg/spa.svg" height="45px"></center><br>
+        <h3 class="skill-title">Relaksasi</h3>
+        <p class="skill-text">
+          Nikmati ketenangan dengan ramuan yang menenangkan tubuh dan pikiran.
+        </p>
+      </article>
+      <!--end single skill -->
+      <!-- single skill -->
+      <article class="skill1">
+        <center><img src="svg/ecology-and-environment.svg" height="45px"></center><br>
+        <h3 class="skill-title">energi</h3>
+        <p class="skill-text">
+          Dapatkan energi dan vitalitas dengan ramuan alami yang meningkatkan stamina.  
+        </p>
+      </article>
+      <!--end single skill -->
+      <!-- single skill -->
+      <article class="skill2">
+        <center><img src="svg/cook.svg" height="45px"></center><br>
+        <h3 class="skill-title">Tradisional</h3>
+        <p class="skill-text">
+        produk ini mengandung kearifan lokal yang terjaga turun-temurun untuk manfaat sehat Anda.  
+        </p>
+      </article>
+      <!--end single skill -->
+    </section>
+    
+
+    <!-- about-section -->
+<div class="about">
+  <br>
+    <br>
+    <section class="about-section-center-clearfix" style="display: inline; background-color: darkgrey;" id="id-about">
+      <!-- <div class="section-center clearfix"> -->
+      <!-- first column  -->
+      <article class="about-img-1">
+        <div class="about-picture-container" >
+          <video autoplay muted loop id="myVideo">
+            <source src="videos/woman-drinking-coffee.mp4" type="video/mp4">
+            </video>
+        </div>
+      </article>
+      <!-- second column -->
+      <article class="about-info-1">
+        <!-- section title -->
+        <div class="about-scroll" id="id-about-scroll">
+          <!-- <img src="preloader.gif" height="40px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+          <h3 class="section-subtitle">ABOUT</h3>
+          <h2 class="section-title">Sai Root</h2>
+        
+        <!--end section title -->
+        <p class="about-text">
+          SaiRoot adalah minuman sehat alami yang menggabungkan manfaat dari akar-akaran dan rempah-rempah seperti kencur, dan jahe. Diracik tanpa bahan tambahan kimia, SaiRoot menawarkan solusi praktis untuk mendukung kesehatan harian Anda – mulai dari meningkatkan daya tahan tubuh hingga memberi energi alami.
+
+Misi Kami adalah menghadirkan produk berkualitas yang aman dan alami, membantu Anda menjalani gaya hidup sehat dengan mudah.
+
+SaiRoot – Alami, Sehat, Setiap Hari.
+        </p>
+        <a href="#id-contact" class="main-btn">order now</a>
+        <div class="main-btn-back"></div>
+      </div>
+      </article>
+
+      <div style="clear: both;"></div>
+    </section>
+  
+    <br>
+    <br>
+  </div>
+  
+      <div style="clear: both;"></div>
+      <br>
+    </section>
+    <br>
+  
+  </div>
+          </div>
+          
+          
+          <script>
+          var slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+          }
+          </script>
+
+      </article>
+      <div style="clear: both;"></div>
+    </section>
+  </div>
+  <!-- Contact -->
+  <section class="contact-template" id="id-contact">
+    <h1 class="contact-title">Contact</h1>
+    <br><center><h3 class="menu-subtitle">L O C A T E&nbsp;&nbsp;U S</h3></center>
+  </section>
+
+  <div class="contact">
+    <section class="about-section-center-clearfix" style="display: inline; ">
+
+      <article class="contact-map">
+      <!--left column-->
+      <br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.957296836132!2d105.25944127417188!3d-5.4234593541416665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40db188a082ed5%3A0xa73c4cf727653996!2sSMK%20Negeri%204%20Bandar%20Lampung!5e0!3m2!1sid!2sid!4v1730969334106!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <br><br>
+      </article>
+      <!-- right column -->
+      <article class="contact-img">
+       <!-- second column -->
+        <br>
+        <!-- section title -->
+        <div class="opening-container">
+          <img src="Struct.jpg" alt="Snow" style="width:100%;">
+          </div>
+        </div>
+        
+
+        <!--end section title -->
+      </article>
+      <div style="clear: both;"></div>
+    </section>
+    <center>
+    <div class="contact-social">
+        <a class="contact-social-icons" href="https://www.instagram.com/onion_geo_lerion/#" target="_blank"><img src="svg/instagram.svg" weight="25" title="instagram" height="25"> Instagram</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="contact-social-icons" href="mailto:key_sionin@protonmail.com" target="_blank"><img src="https://cdn.iconscout.com/icon/free/png-256/free-email-icon-download-in-svg-png-gif-file-formats--mail-envelope-message-miscellaneous-pack-icons-1713291.png?f=webp&w=256" weight="50" title="gmail" height="50"> Email</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="contact-social-icons" href="ttps://wa.me/31613949508?text=halo" target="_blank"><img src="svg/whatsapp.svg" weight="30" title="whatsapp" height="30"> Whatsapp</a> 
+    </div><br>
+    <p class="fontsettings">Copyright © 2024 | <a class="colorcover-link" href="#">Sai Root</a></p><br><br>
+  </div></center>
+  </body>
+</html>
+

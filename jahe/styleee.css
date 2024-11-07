@@ -7,6 +7,21 @@ body {
   line-height: 1.5;
   background-color: #E0E5EC;
 }
+@media (max-width: 767px) {
+  .banner {
+    padding: 2rem 1rem;
+  }
+  .banner-title {
+    font-size: 2rem;
+  }
+  .banner-subtitle {
+    font-size: 1rem;
+  }
+  .contact-map, .contact-img {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
 /* helper/utility classes */
 a {
   text-decoration: none;

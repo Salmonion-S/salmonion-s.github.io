@@ -15,7 +15,7 @@ app.get('/cek-region', async (req, res) => {
     }
     
     try {
-        const response = await axios.get(`https://www.klastergames.com/cek-region-mobile-legends`);
+        const response = await axios.get(`https://www.klastergames.com/cek-region-mobile-legends?id=${id}&server=${server}`);
         
         if (response.data.success) {
             return res.json({

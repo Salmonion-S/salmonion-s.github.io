@@ -1,17 +1,16 @@
-/* Global Styles & Custom Scrollbar */
 body {
-    background-color: #0D111C; /* Using custom color defined in tailwind.config.js */
+    background-color: #0D111C; 
     font-family: 'Urbanist', sans-serif;
-    color: #e2e8f0; /* slate-200 */
+    color: #e2e8f0; 
     overflow-x: hidden;
-    cursor: none; /* Hide default cursor */
+    cursor: none; 
 }
 
 ::-webkit-scrollbar {
     width: 8px;
 }
 ::-webkit-scrollbar-track {
-    background: #0f172a; /* slate-900 */
+    background: #0f172a; 
 }
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(to bottom, #38bdf8, #a78bfa);
@@ -21,7 +20,6 @@ body {
     background: linear-gradient(to bottom, #7dd3fc, #c4b5fd);
 }
 
-/* Custom Gradient Text */
 .gradient-text {
     background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple), var(--accent-pink));
     -webkit-background-clip: text;
@@ -29,18 +27,17 @@ body {
     background-clip: text;
     text-fill-color: transparent;
 }
-/* Stronger gradient for Hero section */
+
 .gradient-text-hero {
-    background: linear-gradient(135deg, #7dd3fc, #a78bfa, #ec4899); /* Brighter colors */
+    background: linear-gradient(135deg, #7dd3fc, #a78bfa, #ec4899); 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
 }
 
-/* --- Core Panel Styles (New Base for Cards) --- */
 .base-panel {
-    background-color: var(--dark-panel); /* Darker, less transparent */
+    background-color: var(--dark-panel); 
     border: 1px solid var(--dark-border);
     border-radius: 1rem; /* 16px */
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
@@ -49,7 +46,6 @@ body {
     overflow: hidden;
 }
 
-/* Glow effect for panels */
 .base-panel::before {
     content: '';
     position: absolute;
@@ -65,18 +61,13 @@ body {
 }
 .base-panel:hover::before {
     transform: scale(1);
-    opacity: 0.1; /* Subtle glow */
+    opacity: 0.1;
 }
 
-/* --- Specific Panel Implementations --- */
-.info-panel { /* Used in About section */
-    /* No @extend .base-panel here if .glass-card-one is also applied directly */
-    /* Specific overrides/additions if needed */
+.info-panel { 
 }
 
 .skill-card {
-    /* No @extend .base-panel here if .glass-card-two is also applied directly */
-    /* Specific overrides/additions */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -96,19 +87,18 @@ body {
 }
 
 .project-card {
-    /* No @extend .base-panel here if .glass-card-two is also applied directly */
     display: flex;
     flex-direction: column;
-    padding: 0; /* Remove default padding for image to sit flush */
+    padding: 0; 
 }
 .project-card:hover {
     transform: translateY(-8px) scale(1.02);
     border-color: var(--accent-purple);
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3), 0 0 20px rgba(167, 139, 250, 0.3);
 }
-.project-card .p-6 { /* Add back padding for content */
+.project-card .p-6 { 
     padding: 1.5rem;
-    flex-grow: 1; /* Allow content to grow */
+    flex-grow: 1; 
     display: flex;
     flex-direction: column;
 }
@@ -117,7 +107,6 @@ body {
 }
 
 .contact-card {
-    /* No @extend .base-panel here if .glass-card-two is also applied directly */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,7 +126,6 @@ body {
 }
 
 
-/* --- Buttons --- */
 .btn-base {
     @apply px-8 py-3 rounded-full font-semibold transition-all duration-300 text-center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -165,7 +153,7 @@ body {
     @extend .btn-base;
     background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
     color: white;
-    border: 1px solid transparent; /* To prevent border jump */
+    border: 1px solid transparent;
 }
 .btn-primary::before {
     background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
@@ -184,14 +172,13 @@ body {
     background: var(--accent-blue);
 }
 .btn-secondary:hover {
-    color: white; /* Text turns white on hover */
+    color: white; 
     box-shadow: 0 6px 20px rgba(56, 189, 248, 0.2);
 }
 
-/* --- Section Title - Refined --- */
 .section-title {
-    @apply text-4xl md:text-5xl font-extrabold text-center mb-16 relative pb-4 text-slate-50; /* Changed base text color */
-    letter-spacing: -0.05em; /* Tighter letter spacing */
+    @apply text-4xl md:text-5xl font-extrabold text-center mb-16 relative pb-4 text-slate-50; 
+    letter-spacing: -0.05em; 
 }
 .section-title::after {
     content: '';
@@ -200,8 +187,8 @@ body {
     transition: all 0.4s ease-out;
 }
 .section-title:hover::after {
-    width: 120px; /* Expand on hover */
-    box-shadow: 0 0 15px rgba(56, 189, 248, 0.5); /* Subtle glow */
+    width: 120px; 
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.5); 
 }
 .section-title span.gradient-text {
     display: inline-block;
@@ -209,12 +196,11 @@ body {
 }
 .section-title:hover span.gradient-text {
     transform: translateY(-3px);
-    filter: brightness(1.2); /* Make gradient pop more */
+    filter: brightness(1.2); 
 }
 
-/* --- Header & Navigation --- */
 #main-header {
-    background-color: var(--dark-bg); /* Use new dark background */
+    background-color: var(--dark-bg); 
     border-bottom: 1px solid var(--dark-border);
 }
 .nav-link {
@@ -227,36 +213,34 @@ body {
 .nav-link.active::after {
     content: '';
     position: absolute;
-    bottom: -8px; /* Adjust for more prominent dot */
+    bottom: -8px; 
     left: 50%;
     transform: translateX(-50%);
-    width: 8px; /* Larger dot */
+    width: 8px; 
     height: 8px;
     background-color: var(--accent-blue);
     border-radius: 50%;
     opacity: 1;
     transition: all 0.3s ease-out;
-    box-shadow: 0 0 8px rgba(56, 189, 248, 0.5); /* Dot glow */
+    box-shadow: 0 0 8px rgba(56, 189, 248, 0.5); 
 }
 .nav-link:not(.active)::after {
     opacity: 0;
-    transform: translateX(-50%) scale(0.5); /* Shrink when inactive */
+    transform: translateX(-50%) scale(0.5); 
 }
-.nav-link:hover:not(.active) { /* Subtle hover for inactive */
+.nav-link:hover:not(.active) { 
     transform: translateY(-2px);
 }
 
 
-/* --- Mobile Menu Toggle --- */
 #mobile-menu-toggle i {
     transition: transform 0.3s ease-in-out, color 0.3s ease-out;
 }
 #mobile-menu-toggle.active i {
     transform: rotate(90deg);
-    color: var(--accent-pink); /* Change color when active */
+    color: var(--accent-pink); 
 }
 
-/* --- Custom Cursor --- */
 #cursor-dot {
     background-color: var(--accent-blue);
 }
@@ -264,11 +248,11 @@ body {
     border-color: var(--accent-blue);
     animation: cursor-pulse 2s infinite ease-in-out;
 }
-#cursor-outline.scale-150 { /* Override pulse when hovering interactive element */
+#cursor-outline.scale-150 { 
     animation: none;
-    background-color: var(--accent-blue) !important; /* Make it solid when interactive */
-    border-color: var(--accent-blue) !important; /* Make border strong */
-    opacity: 0.2; /* Slightly transparent */
+    background-color: var(--accent-blue) !important; 
+    border-color: var(--accent-blue) !important; 
+    opacity: 0.2; 
 }
 @keyframes cursor-pulse {
     0% { transform: scale(1) translate3d(var(--x), var(--y), 0); opacity: 1; }
@@ -276,10 +260,9 @@ body {
     100% { transform: scale(1) translate3d(var(--x), var(--y), 0); opacity: 1; }
 }
 
-/* Tag Badges - NEW */
 .tag-badge {
     @apply px-3 py-1 text-xs font-semibold rounded-full transition-all duration-200;
-    border: 1px solid transparent; /* Placeholder for dynamic border */
+    border: 1px solid transparent; 
 }
 .tag-badge.bg-accent-blue\/20:hover {
     background-color: var(--accent-blue);
@@ -297,7 +280,6 @@ body {
     border-color: var(--accent-pink);
 }
 
-/* For line-clamp, might need a polyfill for older browsers or use -webkit-box-orient */
 .line-clamp-3 {
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -305,21 +287,20 @@ body {
     overflow: hidden;
 }
 
-/* --- Modal Styles --- */
 .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.7); 
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Above everything else */
+    z-index: 1000; 
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
-    visibility: hidden; /* Hidden by default */
+    visibility: hidden; 
 }
 
 .modal-overlay.show {
@@ -328,28 +309,26 @@ body {
 }
 
 .modal-content {
-    transform: translateY(20px); /* Start slightly below */
+    transform: translateY(20px); 
     transition: transform 0.3s ease-in-out;
-    position: relative; /* For close button positioning */
-    max-width: 800px; /* Max width for content */
+    position: relative; 
+    max-width: 800px; 
 }
 
 .modal-overlay.show .modal-content {
-    transform: translateY(0); /* Slide into view */
+    transform: translateY(0); 
 }
 
-/* Style for close button */
 #close-modal-btn {
     cursor: pointer;
 }
 
-/* --- Glass Card Styles --- */
 .glass-card-one {
-    background: rgba(0, 46, 92, 0.11); /* Adjusted for a purplish tint */
+    background: rgba(0, 46, 92, 0.11); 
     backdrop-filter: blur(20px) saturate(150%);
     -webkit-backdrop-filter: blur(20px) saturate(150%);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 1rem; /* Ensure consistency with base-panel if desired */
+    border-radius: 1rem; 
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
@@ -358,7 +337,7 @@ body {
     backdrop-filter: blur(20px) saturate(150%);
     -webkit-backdrop-filter: blur(20px) saturate(150%);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 1rem; /* Ensure consistency with base-panel if desired */
+    border-radius: 1rem; 
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 

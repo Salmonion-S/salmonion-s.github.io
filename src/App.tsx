@@ -20,6 +20,13 @@ export default function App() {
   const [currentView, setCurrentView] = useState<ViewRoute>("home");
   const [activeSection, setActiveSection] = useState("hero");
 
+const redirect = sessionStorage.getItem("redirect");
+
+if (redirect) {
+  sessionStorage.removeItem("redirect");
+  window.history.replaceState({}, "", redirect);
+}
+
   // Custom client router reflecting native window history pathnames
   useEffect(() => {
     const handleUrlRouting = () => {

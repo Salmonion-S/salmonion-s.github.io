@@ -1,6 +1,6 @@
 {
-  "name": "Salmon | TAG",
-  "description": "Gaya Liquid Glass Design ala visionOS dan Apple WWDC untuk portfolio IT Specialist & Network Engineer.",
+  "name": "Neon Noir Digital Identity Portfolio",
+  "description": "A cinematic cyberpunk portfolio for Salmon, featuring dynamic interactive glass, cinematic reveals, and a dedicated NFC ID page.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

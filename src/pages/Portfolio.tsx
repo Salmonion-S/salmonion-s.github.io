@@ -259,19 +259,19 @@ export default function Portfolio() {
             <Reveal delay={0.2}>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <ContactBox 
-                  href="#"
+                  href="https://signal.me/#eu/xrAU0_L6xdwg5QMsaoTffXIo5ebqcUouVjCmNKJrcBamxRNRlbJLfZdwvrwfU4r2"
                   icon={<MessageSquare className="w-6 h-6" />}
                   label="Signal"
                   colorClass="hover:border-sky-400/50 hover:bg-sky-400/10 text-sky-400"
                 />
                 <ContactBox 
-                  href="#"
+                  href="https://instagram.com/wichi_ns"
                   icon={<Instagram className="w-6 h-6" />}
                   label="Instagram"
                   colorClass="hover:border-neon-magenta/50 hover:bg-neon-magenta/10 text-neon-magenta"
                 />
                 <ContactBox 
-                  href="mailto:contact@example.com"
+                  href="mailto:key_sionin@protonmail.com"
                   icon={<Mail className="w-6 h-6" />}
                   label="Proton Mail"
                   colorClass="hover:border-neon-purple/50 hover:bg-neon-purple/10 text-neon-purple"

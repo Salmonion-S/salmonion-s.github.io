@@ -45,19 +45,19 @@ export default function NfcContact() {
             <ContactLink
               icon={<MessageSquare size={18} />}
               label="Signal"
-              href="#"
+              href="https://signal.me/#eu/xrAU0_L6xdwg5QMsaoTffXIo5ebqcUouVjCmNKJrcBamxRNRlbJLfZdwvrwfU4r2"
               glowColor="group-hover:text-sky-400"
             />
             <ContactLink
               icon={<Instagram size={18} />}
               label="Instagram"
-              href="#"
+              href="https://instagram.com/wichi_ns"
               glowColor="group-hover:text-neon-magenta"
             />
             <ContactLink
               icon={<Mail size={18} />}
               label="Proton Mail"
-              href="mailto:contact@example.com"
+              href="mailto:key_sionin@protonmail.com"
               glowColor="group-hover:text-neon-purple"
             />
           </div>
